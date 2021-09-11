@@ -17,10 +17,9 @@ a {
 }
 
 .container-wide {
-    width: 1790px;
+    max-width: 1790px;
     height: 25px;
     margin: 0 auto;
-   
 }
 
 .row {
@@ -69,6 +68,24 @@ a {
     position: relative;
 }
 
+.nav a::after {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    opacity: 0;
+    transition: all 0.2s ease-in;
+}
+
+.nav a:hover::after {
+    bottom: -5px;
+    background-color: #FBD784;
+    opacity: 1;
+}
 
 .nav-wripper{
     margin-bottom: 198px;
@@ -79,22 +96,24 @@ a {
 }
 
 .login {
-    display: inline-block;
     position: relative;
     color: white;
     text-decoration: none;
     font-weight: 700;
     font-size: 17px;
+    padding-left: 30px;
 }
 .login::before{
     display: block;
     content: "";
     position: absolute;
-    right: 0;
+    left: 0;
     width: 20px;
     height: 20px;
     top: 50%;
+    transform: translateY(-50%);
     background-image: url("/img/icons/cart.svg");
+    background-size: contain;
 }
 
 .hero {
@@ -334,13 +353,7 @@ flex-direction: column;
 }
 
 .footer-nav a:hover::after {
-    position: absolute;
-    left: 0;
     bottom: -5px;
-    display: block;
-    content: '';
-    width: 100%;
-    height: 2px;
     background-color: white;
     opacity: 1;
 }
