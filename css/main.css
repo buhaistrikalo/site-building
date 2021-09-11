@@ -6,7 +6,7 @@ body {
     margin: 0;
     font-family: 'Gilroy';
     background-color: #0B1D26;
-    background-image: url('img/bg/bg.jpg');
+    background-image: url('/img/bg/bg.jpg');
     background-size: 100% auto;
     background-repeat: no-repeat;
     color: white;
@@ -112,7 +112,7 @@ a {
     height: 20px;
     top: 50%;
     transform: translateY(-50%);
-    background-image: url("img/icons/cart.svg");
+    background-image: url("/img/icons/cart.svg");
     background-size: contain;
 }
 
@@ -178,7 +178,7 @@ a {
     height: 24px;
     top: 50%;
     transform: translateY(-50%);
-    background-image: url("img/icons/arrow_down.svg");
+    background-image: url("/img/icons/arrow_down.svg");
 }
 
 .container {
@@ -270,7 +270,7 @@ a {
     height: 16px;
     top: 50%;
     transform: translateY(-50%);
-    background-image: url("img/icons/arrow_right.svg");
+    background-image: url("/img/icons/arrow_right.svg");
 }
 .article-img img{
     display: block;
