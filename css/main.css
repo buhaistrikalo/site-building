@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Gilroy';
+    background-color: #0B1D26;
+    background-image: url('/img/bg/bg.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.container-wide {
+    width: 1790px;
+    height: 25px;
+    margin: 0 auto;
+    
+}
+
+.row {
+    
+    display: flex;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+/* Header */ 
+
+.header {
+    padding: 0 15px;
+    padding-top: 64px;
+}
+
+
+.logo {
+    font-family: 'Playfair Display',serif;
+    font-weight: 700;
+    font-size: 32px;
+}
+.nav {
+}
+.login {
+}
