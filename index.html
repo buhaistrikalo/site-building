@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
     <link rel="stylesheet" href="./fonts/gilroy/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,19 +29,32 @@
                         </ul>
                     </div>
                     <a href="#" class="login">Account</a>
+                    <button class="nav-button">
+                        <span class="nav-button-icon"></span>
+                    </button>
+                    <div class="mobile-nav">
+                        <div class="nav">
+                            <ul>
+                                <li><a href="#" class="" id="">Equipment</a></li>
+                                <li><a href="#" class="" id="">About us</a></li>
+                                <li><a href="#" class="" id="">Blog</a></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="login">Account</a>
+                    </div>
                 </div>
             </div>
         </nav>
         <div class="hero">
             <a href="" class="hero-a">
-                <div class="hire-category">A Hiking guide</div>
+                <div class="hero-category">A Hiking guide</div>
                 <h1 class="hero-heading">Be prepared for the Mountains and beyond!</h1>
                 <p class="hero-scroll">scroll down</p>
             </a>
         </div>
     </header>
 
-    <main>
+    <main class="main">
         <div class="container">
             <article class="article">
                 <div class="article-text" data-num='01'>
@@ -62,9 +76,6 @@
                 </div>
             </article>
             <article class="article">
-                <div class="article-img">
-                    <img src="/site-building/img/pictures/02.jpg" alt="What level of hiker are you?">
-                </div>
                 <div class="article-text" data-num='02'>
                     <div class="article-subtitle">Hiking Essentials</div>
                     <div class="article-title">Picking the right Hiking Gear!</div>
@@ -75,6 +86,9 @@
                         clothes, which will get heavy and chafe wif they get sweaty or wet.
                     </p>
                     <a href="#" class="article-read-more">read more</a>
+                </div>
+                <div class="article-img">
+                    <img src="/img/pictures/02.jpg" alt="What level of hiker are you?">
                 </div>
             </article>
             <article class="article">
@@ -95,9 +109,10 @@
             </article>
         </div>
     </main>
+
     <footer class="footer">
         <div class="container">
-            <div class="row space-between">
+            <div class="footer-row">
                 <div class="footer-copyright">
                     <div class="logo">LOGO</div>
                     <p class="footer-copyright-desc">Get out there & discover your next slope, mountain & destination!
@@ -127,6 +142,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
