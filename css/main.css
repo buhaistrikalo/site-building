@@ -116,6 +116,92 @@ a {
     background-size: contain;
 }
 
+
+.nav-button{
+    display: none;
+    height: 25px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    background: none;
+
+    position: relative;
+    z-index: 9;
+}
+
+.nav-button-icon {
+    position: relative;
+    display: block;
+    background-color: white;
+    width: 32px;
+    height: 4px;
+    border: none;
+}
+.nav-button-icon::before {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    content: "";
+    display: block;
+    background-color: white;
+    width: 32px;
+    height: 4px;
+    border: none;
+}
+.nav-button-icon::after {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    content: "";
+    display: block;
+    background-color: white;
+    width: 32px;
+    height: 4px;
+    border: none;
+}
+
+.nav-button-close .nav-button-icon {
+    background-color: transparent;
+}
+
+.nav-button-close .nav-button-icon::before{
+    transform: rotate(45deg);
+    top: 0;
+}
+.nav-button-close .nav-button-icon::after{
+    transform: rotate(-45deg);
+    top: 0;
+}
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 320px;
+    height: 100%;
+    background-color: rgba(11, 29, 38, 0.8);
+
+    padding: 70px 70px 50px 30px;
+}
+
+.mobile-nav .nav, 
+.mobile-nav .login{
+    display: block;
+}
+
+.mobile-nav .nav ul{
+    flex-direction: column;
+}
+.mobile-nav .nav li{
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+/* TITLE */
 .hero {
     display: block;
     margin-left: auto;
@@ -129,7 +215,7 @@ a {
 .hero:hover{
     transform: translateY(-5%);
 }
-.hire-category {
+.hero-category {
     position: relative;
     font-weight: 800;
     font-size: 18px;
@@ -140,7 +226,7 @@ a {
     color: #FBD784;
     margin-bottom: 32px;
 }
-.hire-category::before {
+.hero-category::before {
     position: absolute;
     left:0;
     top:50%;
@@ -196,10 +282,14 @@ a {
     align-items: center;
     margin-bottom: 200px;
 }
+.article:nth-child(even){
+    flex-direction: row-reverse;
+}
 .article-text {
     position: relative;
     padding-left: 150px;
     max-width: 782px;
+    margin-right: 20px;
 }
 .article-text::before{
     position: absolute;
@@ -274,12 +364,17 @@ a {
 }
 .article-img img{
     display: block;
+    max-width: 100%;
 }
 
 /* Footer */
 
 .footer{
     padding-bottom: 120px;
+}
+.footer-row{
+    display: flex;
+    justify-content: space-between;
 }
 .footer-copyright {
 display: flex;
